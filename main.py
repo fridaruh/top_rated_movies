@@ -53,6 +53,7 @@ ax3.axis('equal')  # Para que sea un círculo
 st.pyplot(fig3)
 
 # Instanciar el cliente de OpenAI
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 client = openai.OpenAI(api_key=openai_api_key)
 
 def obtener_respuesta(prompt):
